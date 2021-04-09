@@ -63,7 +63,7 @@ F 3 "~" H 5390 1940 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L test_project-rescue:COMMON_-power_GOST PWR3
+L arduino_connections-rescue:COMMON_-power_GOST-test_project-rescue PWR3
 U 1 1 603BF4BC
 P 3590 2505
 F 0 "PWR3" H 3650 2395 50  0001 C CNN
@@ -162,7 +162,7 @@ F 3 "~" H 2800 1485 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L test_project-rescue:+12V #PWR01
+L arduino_connections-rescue:+12V-test_project-rescue #PWR01
 U 1 1 604E5161
 P 2800 1385
 F 0 "#PWR01" H 2800 1285 79  0001 C CNN
@@ -186,7 +186,7 @@ F 3 "~" H 2800 1195 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L test_project-rescue:sw_btn-test_project-cache U4
+L arduino_connections-rescue:sw_btn-test_project-cache-test_project-rescue U4
 U 1 1 60588C51
 P 3290 3180
 F 0 "U4" H 3390 3300 50  0001 C CNN
@@ -197,7 +197,7 @@ F 3 "" H 3290 3180 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L test_project-rescue:sw_btn-test_project-cache U2
+L arduino_connections-rescue:sw_btn-test_project-cache-test_project-rescue U2
 U 1 1 60586A8E
 P 3290 2980
 F 0 "U2" H 3390 3100 50  0001 C CNN
@@ -208,7 +208,7 @@ F 3 "" H 3290 2980 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L test_project-rescue:sw_btn-test_project-cache U1
+L arduino_connections-rescue:sw_btn-test_project-cache-test_project-rescue U1
 U 1 1 6057E898
 P 3290 2780
 F 0 "U1" H 3390 2900 50  0001 C CNN
@@ -274,7 +274,7 @@ F 3 "" H 4465 3410 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L test_project-rescue:+12V #PWR02
+L arduino_connections-rescue:+12V-test_project-rescue #PWR02
 U 1 1 604EA431
 P 4365 1380
 F 0 "#PWR02" H 4365 1280 79  0001 C CNN

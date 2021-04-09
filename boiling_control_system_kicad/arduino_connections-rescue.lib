@@ -1,0 +1,50 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +12V-test_project-rescue
+#
+DEF +12V-test_project-rescue #PWR 0 0 N N 1 F P
+F0 "#PWR" 0 -100 79 H I C CNN
+F1 "+12V-test_project-rescue" 0 200 50 H V C CNN
+F2 "" 0 125 98 V V C CNN
+F3 "" 0 125 98 H I C CNN
+DRAW
+P 2 0 1 0 0 125 -32 7 N
+P 2 0 1 0 0 125 0 0 N
+P 2 0 1 0 32 7 0 125 N
+X +12V 1 0 0 0 U 71 71 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# COMMON_-power_GOST-test_project-rescue
+#
+DEF COMMON_-power_GOST-test_project-rescue PWR 0 40 Y Y 1 F N
+F0 "PWR" 130 -35 50 H I C CNN
+F1 "COMMON_-power_GOST-test_project-rescue" 195 35 50 H I C CNN
+F2 "" 0 -70 50 H I C CNN
+F3 "" 0 -70 50 H I C CNN
+DRAW
+S 55 -80 -50 -75 0 1 0 N
+S 55 -70 -50 -75 0 1 0 N
+P 3 0 1 0 0 0 0 -70 5 -70 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# sw_btn-test_project-cache-test_project-rescue
+#
+DEF sw_btn-test_project-cache-test_project-rescue U 0 40 Y Y 1 F N
+F0 "U" 100 95 50 H I C CNN
+F1 "sw_btn-test_project-cache-test_project-rescue" 10 -85 50 H I C CNN
+F2 "" 0 -15 50 H I C CNN
+F3 "" 0 -15 50 H I C CNN
+DRAW
+P 3 0 1 0 -50 0 50 50 70 60 N
+P 4 0 1 0 20 35 20 105 -20 105 -20 15 N
+P 4 0 1 0 40 85 40 105 -40 105 -40 85 N
+X ~ 1 -100 0 50 R 50 50 1 1 P
+X ~ 2 125 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
