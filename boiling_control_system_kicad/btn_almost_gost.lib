@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# clamp
+#
+DEF clamp U 0 40 Y Y 1 F N
+F0 "U" 70 95 50 H I C CNN
+F1 "clamp" 0 -65 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 32 0 1 0 N
+P 2 0 1 0 35 0 55 0 N
+P 2 0 1 0 35 35 -30 -30 N
+P 2 0 1 0 45 0 100 0 N
+X ~ ~ 100 0 100 L 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

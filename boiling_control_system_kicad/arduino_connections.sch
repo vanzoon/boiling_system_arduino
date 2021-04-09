@@ -1,0 +1,566 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 725  4250
+Text Label 2465 2280 0    50   ~ 0
+~~220V~
+Text Label 2465 2480 0    50   ~ 0
+~~220V~
+Text Label 2465 2280 0    50   ~ 0
+~
+Text Label 3840 2280 0    50   ~ 0
+D5
+Text Label 3840 2180 0    50   ~ 0
+D4
+Text Label 5240 1765 0    50   ~ 0
+D4
+NoConn ~ 3965 2380
+NoConn ~ 3965 2080
+NoConn ~ 4565 1380
+$Comp
+L MCU_Module:Arduino_UNO_R2 A1
+U 1 1 60008B04
+P 4465 2380
+F 0 "A1" H 4740 3455 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 4930 3375 39  0000 C CNN
+F 2 "Module:Arduino_UNO_R2" H 4465 2380 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 4465 2380 50  0001 C CNN
+	1    4465 2380
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3965 1880
+NoConn ~ 3965 1780
+NoConn ~ 3965 2880
+NoConn ~ 3965 2980
+NoConn ~ 3965 3080
+NoConn ~ 4965 2480
+NoConn ~ 4965 2580
+NoConn ~ 4965 2680
+NoConn ~ 4965 2180
+NoConn ~ 4965 1980
+NoConn ~ 4965 1780
+$Comp
+L Device:R_Small R7
+U 1 1 6003FC1F
+P 5390 1940
+F 0 "R7" H 5320 1894 50  0000 R CNN
+F 1 "10K" H 5320 1985 31  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 5320 1940 50  0001 C CNN
+F 3 "~" H 5390 1940 50  0001 C CNN
+	1    5390 1940
+	-1   0    0    1   
+$EndComp
+$Comp
+L test_project-rescue:COMMON_-power_GOST PWR3
+U 1 1 603BF4BC
+P 3590 2505
+F 0 "PWR3" H 3650 2395 50  0001 C CNN
+F 1 "COMMON_" H 3785 2540 50  0001 C CNN
+F 2 "" H 3590 2435 50  0001 C CNN
+F 3 "" H 3590 2435 50  0001 C CNN
+	1    3590 2505
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Heater R1
+U 1 1 600CF186
+P 2815 2280
+F 0 "R1" V 2608 2280 50  0000 C CNN
+F 1 "Heater" V 2699 2280 50  0000 C CNN
+F 2 "" V 2745 2280 50  0001 C CNN
+F 3 "~" H 2815 2280 50  0001 C CNN
+	1    2815 2280
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 6000DA89
+P 3740 1480
+F 0 "R5" H 3810 1526 50  0000 L CNN
+F 1 "4,7K" H 3810 1435 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 3670 1480 50  0001 C CNN
+F 3 "~" H 3740 1480 50  0001 C CNN
+	1    3740 1480
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SolidState:S116S01 K1
+U 1 1 6006F5D9
+P 3265 2380
+F 0 "K1" H 3265 2680 50  0000 C CNN
+F 1 "SSR-40 DA" H 3270 2590 50  0000 C CNN
+F 2 "" H 3065 2180 50  0001 L CIN
+F 3 "http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/s116s01_e.pdf" H 3265 2380 50  0001 L CNN
+	1    3265 2380
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power_GOST:COMMON_ PWR6
+U 1 1 604F5E23
+P 5390 2040
+F 0 "PWR6" H 5450 1930 50  0001 C CNN
+F 1 "COMMON_" H 5585 2075 50  0001 C CNN
+F 2 "" H 5390 1970 50  0001 C CNN
+F 3 "" H 5390 1970 50  0001 C CNN
+	1    5390 2040
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 603D3085
+P 5590 1605
+F 0 "J1" H 5590 1395 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 5463 1417 50  0001 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 5590 1605 50  0001 C CNN
+F 3 "~" H 5590 1605 50  0001 C CNN
+	1    5590 1605
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 6048F82C
+P 2800 1385
+F 0 "#FLG02" H 2800 1460 50  0001 C CNN
+F 1 "PWR_FLAG" V 2800 1660 39  0000 C CNN
+F 2 "" H 2800 1385 50  0001 C CNN
+F 3 "~" H 2800 1385 50  0001 C CNN
+	1    2800 1385
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power_GOST:COMMON_ GND1
+U 1 1 6060F8B6
+P 2800 1485
+F 0 "GND1" H 2860 1375 50  0001 C CNN
+F 1 "COMMON_" H 2995 1520 50  0001 C CNN
+F 2 "" H 2800 1415 50  0001 C CNN
+F 3 "" H 2800 1415 50  0001 C CNN
+	1    2800 1485
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6051AF2C
+P 2800 1485
+F 0 "#FLG0102" H 2800 1560 50  0001 C CNN
+F 1 "PWR_FLAG" V 2800 1760 39  0000 C CNN
+F 2 "" H 2800 1485 50  0001 C CNN
+F 3 "~" H 2800 1485 50  0001 C CNN
+	1    2800 1485
+	0    -1   -1   0   
+$EndComp
+$Comp
+L test_project-rescue:+12V #PWR01
+U 1 1 604E5161
+P 2800 1385
+F 0 "#PWR01" H 2800 1285 79  0001 C CNN
+F 1 "+12V" H 2910 1495 50  0000 C CNN
+F 2 "" V 2800 1510 98  0000 C CNN
+F 3 "" H 2800 1510 98  0001 C CNN
+	1    2800 1385
+	1    0    0    -1  
+$EndComp
+Text Label 2800 1195 0    50   ~ 0
+~~220V~
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 604C217C
+P 2800 1195
+F 0 "#FLG01" H 2800 1270 50  0001 C CNN
+F 1 "PWR_FLAG" V 2800 1470 39  0000 C CNN
+F 2 "" H 2800 1195 50  0001 C CNN
+F 3 "~" H 2800 1195 50  0001 C CNN
+	1    2800 1195
+	0    -1   -1   0   
+$EndComp
+$Comp
+L test_project-rescue:sw_btn-test_project-cache U4
+U 1 1 60588C51
+P 3290 3180
+F 0 "U4" H 3390 3300 50  0001 C CNN
+F 1 "sw_btn" H 3300 3095 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 3290 3180 50  0001 C CNN
+F 3 "" H 3290 3180 50  0001 C CNN
+	1    3290 3180
+	1    0    0    -1  
+$EndComp
+$Comp
+L test_project-rescue:sw_btn-test_project-cache U2
+U 1 1 60586A8E
+P 3290 2980
+F 0 "U2" H 3390 3100 50  0001 C CNN
+F 1 "sw_btn" H 3300 2895 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 3290 2980 50  0001 C CNN
+F 3 "" H 3290 2980 50  0001 C CNN
+	1    3290 2980
+	1    0    0    -1  
+$EndComp
+$Comp
+L test_project-rescue:sw_btn-test_project-cache U1
+U 1 1 6057E898
+P 3290 2780
+F 0 "U1" H 3390 2900 50  0001 C CNN
+F 1 "sw_btn" H 3300 2695 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 3290 2780 50  0001 C CNN
+F 3 "" H 3290 2780 50  0001 C CNN
+	1    3290 2780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 603F442D
+P 2940 2780
+F 0 "R2" V 2980 2695 50  0000 R CNN
+F 1 "10K" V 2890 2705 32  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2870 2780 50  0001 C CNN
+F 3 "~" H 2940 2780 50  0001 C CNN
+	1    2940 2780
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 6044731B
+P 2940 2980
+F 0 "R3" V 2980 2895 50  0000 R CNN
+F 1 "10K" V 2890 2905 32  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2870 2980 50  0001 C CNN
+F 3 "~" H 2940 2980 50  0001 C CNN
+	1    2940 2980
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 60447ABC
+P 2940 3180
+F 0 "R4" V 2980 3095 50  0000 R CNN
+F 1 "10K" V 2890 3105 32  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2870 3180 50  0001 C CNN
+F 3 "~" H 2940 3180 50  0001 C CNN
+	1    2940 3180
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power_GOST:COMMON_ PWR1
+U 1 1 604F3672
+P 2715 3205
+F 0 "PWR1" H 2775 3095 50  0001 C CNN
+F 1 "COMMON_" H 2910 3240 50  0001 C CNN
+F 2 "" H 2715 3135 50  0001 C CNN
+F 3 "" H 2715 3135 50  0001 C CNN
+	1    2715 3205
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_GOST:COMMON_ PWR4
+U 1 1 604F3FD3
+P 4465 3480
+F 0 "PWR4" H 4525 3370 50  0001 C CNN
+F 1 "COMMON_" H 4660 3515 50  0001 C CNN
+F 2 "" H 4465 3410 50  0001 C CNN
+F 3 "" H 4465 3410 50  0001 C CNN
+	1    4465 3480
+	1    0    0    -1  
+$EndComp
+$Comp
+L test_project-rescue:+12V #PWR02
+U 1 1 604EA431
+P 4365 1380
+F 0 "#PWR02" H 4365 1280 79  0001 C CNN
+F 1 "+12V" H 4475 1490 50  0000 C CNN
+F 2 "" V 4365 1505 98  0000 C CNN
+F 3 "" H 4365 1505 98  0001 C CNN
+	1    4365 1380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_GOST:COMMON_ PWR2
+U 1 1 604F70B2
+P 2965 1730
+F 0 "PWR2" H 3025 1620 50  0001 C CNN
+F 1 "COMMON_" H 3160 1765 50  0001 C CNN
+F 2 "" H 2965 1660 50  0001 C CNN
+F 3 "" H 2965 1660 50  0001 C CNN
+	1    2965 1730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2465 2480 2965 2480
+Wire Wire Line
+	2465 2280 2665 2280
+Wire Wire Line
+	3840 2280 3965 2280
+Wire Wire Line
+	3840 2180 3965 2180
+Wire Wire Line
+	5240 1765 5390 1765
+Wire Wire Line
+	2965 1680 2965 1730
+Wire Wire Line
+	3865 2780 3865 3180
+Wire Wire Line
+	3715 2280 3565 2280
+Wire Wire Line
+	3715 2480 3965 2480
+Wire Wire Line
+	3715 2480 3715 2280
+Wire Wire Line
+	3965 2780 3865 2780
+Wire Wire Line
+	3790 2680 3965 2680
+Wire Wire Line
+	3790 2980 3790 2680
+Wire Wire Line
+	3715 2580 3715 2780
+Wire Wire Line
+	3965 2580 3715 2580
+Wire Wire Line
+	3965 2980 4040 2980
+Wire Wire Line
+	3965 2880 4040 2880
+Connection ~ 5390 1765
+Wire Wire Line
+	5390 1765 5390 1840
+Connection ~ 3740 1980
+Wire Wire Line
+	3740 1980 3965 1980
+Wire Wire Line
+	3590 2505 3590 2480
+Wire Wire Line
+	3590 2480 3565 2480
+Wire Wire Line
+	5790 1755 5790 1605
+Wire Wire Line
+	5790 1505 5790 1355
+Wire Wire Line
+	5390 1605 5790 1605
+Wire Wire Line
+	5790 1505 5390 1505
+Wire Wire Line
+	5390 1605 5390 1765
+Wire Wire Line
+	2800 1195 3005 1195
+Wire Wire Line
+	3040 2780 3190 2780
+Wire Wire Line
+	3415 2780 3715 2780
+Wire Wire Line
+	3415 2980 3790 2980
+Wire Wire Line
+	3415 3180 3865 3180
+Wire Wire Line
+	3190 3180 3040 3180
+Wire Wire Line
+	2715 2980 2840 2980
+Wire Wire Line
+	2715 3180 2840 3180
+Wire Wire Line
+	2840 2780 2715 2780
+Wire Wire Line
+	2715 2780 2715 2980
+Connection ~ 2715 3180
+Connection ~ 2715 2980
+Wire Wire Line
+	2715 2980 2715 3180
+Wire Wire Line
+	3040 2980 3190 2980
+Wire Wire Line
+	2715 3180 2715 3205
+Connection ~ 5790 1505
+Connection ~ 5790 1605
+Wire Wire Line
+	4365 3480 4465 3480
+Connection ~ 4465 3480
+Wire Wire Line
+	4465 3480 4565 3480
+Wire Wire Line
+	3290 1980 3740 1980
+Wire Wire Line
+	2990 1680 2965 1680
+$Comp
+L Sensor_Temperature:DS18B20 U7
+U 1 1 60009F94
+P 3290 1680
+F 0 "U7" V 2923 1680 50  0000 C CNN
+F 1 "DS18B20" V 3014 1680 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2290 1430 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 3140 1930 50  0001 C CNN
+	1    3290 1680
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6610 1355 6725 1355
+Connection ~ 6610 1605
+Connection ~ 6610 1505
+Wire Wire Line
+	6205 1605 6610 1605
+Wire Wire Line
+	6610 1505 6205 1505
+Wire Wire Line
+	6610 1355 6610 1505
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 60602D0F
+P 6410 1605
+F 0 "J2" H 6415 1390 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 6283 1417 50  0001 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6410 1605 50  0001 C CNN
+F 3 "~" H 6410 1605 50  0001 C CNN
+	1    6410 1605
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6205 1605 6205 1765
+$Comp
+L Switch:SW_Reed SW2
+U 1 1 60602D09
+P 6725 1555
+F 0 "SW2" V 6890 1460 50  0000 C CNN
+F 1 "SW_Reed" H 6725 1686 50  0001 C CNN
+F 2 "" H 6725 1555 50  0001 C CNN
+F 3 "~" H 6725 1555 50  0001 C CNN
+	1    6725 1555
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6610 1755 6610 1605
+Wire Wire Line
+	6725 1755 6610 1755
+Connection ~ 6205 1765
+$Comp
+L power_GOST:COMMON_ PWR7
+U 1 1 604F6A3B
+P 6205 2040
+F 0 "PWR7" H 6265 1930 50  0001 C CNN
+F 1 "COMMON_" H 6400 2075 50  0001 C CNN
+F 2 "" H 6205 1970 50  0001 C CNN
+F 3 "" H 6205 1970 50  0001 C CNN
+	1    6205 2040
+	1    0    0    -1  
+$EndComp
+Text Label 6055 1765 0    50   ~ 0
+D5
+Wire Wire Line
+	6055 1765 6205 1765
+$Comp
+L Device:R_Small R8
+U 1 1 6023D4A2
+P 6205 1940
+F 0 "R8" H 6135 1894 50  0000 R CNN
+F 1 "10K" H 6135 1985 31  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 6135 1940 50  0001 C CNN
+F 3 "~" H 6205 1940 50  0001 C CNN
+	1    6205 1940
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6205 1765 6205 1840
+$Comp
+L Switch:SW_Reed SW1
+U 1 1 603D307F
+P 5900 1555
+F 0 "SW1" V 6065 1455 50  0000 C CNN
+F 1 "SW_Reed" H 5900 1686 50  0001 C CNN
+F 2 "" H 5900 1555 50  0001 C CNN
+F 3 "~" H 5900 1555 50  0001 C CNN
+	1    5900 1555
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5790 1355 5900 1355
+Wire Wire Line
+	5790 1755 5900 1755
+Wire Wire Line
+	4965 2380 5090 2380
+$Comp
+L power_GOST:COMMON_ PWR8
+U 1 1 60714743
+P 5190 2480
+F 0 "PWR8" H 5250 2370 50  0001 C CNN
+F 1 "COMMON_" H 5385 2515 50  0001 C CNN
+F 2 "" H 5190 2410 50  0001 C CNN
+F 3 "" H 5190 2410 50  0001 C CNN
+	1    5190 2480
+	1    0    0    -1  
+$EndComp
+NoConn ~ 11280 4985
+Wire Wire Line
+	5390 1135 6205 1135
+Wire Wire Line
+	5190 1135 5190 2280
+Wire Wire Line
+	5190 1135 5390 1135
+Wire Wire Line
+	6205 1505 6205 1135
+Wire Wire Line
+	3590 1130 3590 1680
+Connection ~ 5390 1135
+Wire Wire Line
+	5390 1505 5390 1135
+Connection ~ 5190 1135
+Wire Wire Line
+	3590 1130 3740 1130
+Wire Wire Line
+	3740 1130 4665 1130
+Connection ~ 3740 1130
+Wire Wire Line
+	4665 1130 5190 1130
+Wire Wire Line
+	4665 1130 4665 1380
+Wire Wire Line
+	5190 1130 5190 1135
+Connection ~ 4665 1130
+Wire Wire Line
+	3740 1580 3740 1980
+Wire Wire Line
+	3740 1130 3740 1380
+$Comp
+L power_GOST:+5V #PWR0102
+U 1 1 60B94F80
+P 4665 1055
+F 0 "#PWR0102" H 4665 955 79  0001 C CNN
+F 1 "+5V" H 4745 1220 50  0000 C CNN
+F 2 "" V 4665 1180 98  0000 C CNN
+F 3 "" H 4665 1180 98  0001 C CNN
+	1    4665 1055
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4665 1055 4665 1130
+$Comp
+L Device:R_POT_Small R6
+U 1 1 601DE33E
+P 5190 2380
+F 0 "R6" H 5135 2330 50  0000 R CNN
+F 1 "10K" H 5125 2430 31  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 5190 2380 50  0001 C CNN
+F 3 "~" H 5190 2380 50  0001 C CNN
+	1    5190 2380
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 5395 2500 535  480 
+U 603E831E
+F0 "i2c_display" 50
+F1 "i2c_display.sch" 50
+F2 "SDA" I L 5395 2780 50 
+F3 "SCL" I L 5395 2880 50 
+F4 "VCC" I L 5395 2680 50 
+F5 "GND" I L 5395 2580 50 
+$EndSheet
+Wire Wire Line
+	4965 2880 5395 2880
+Wire Wire Line
+	4965 2780 5395 2780
+$EndSCHEMATC
