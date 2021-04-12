@@ -14,18 +14,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 NoConn ~ 725  4250
-Text Label 2465 2280 0    50   ~ 0
+Text Label 2465 2235 0    50   ~ 0
 ~~220V~
-Text Label 2465 2480 0    50   ~ 0
+Text Label 2465 2435 0    50   ~ 0
 ~~220V~
-Text Label 2465 2280 0    50   ~ 0
+Text Label 2465 2235 0    50   ~ 0
 ~
-Text Label 3840 2280 0    50   ~ 0
-D5
-Text Label 3840 2180 0    50   ~ 0
-D4
-Text Label 5240 1765 0    50   ~ 0
-D4
+Text Label 3965 2280 2    28   ~ 0
+Higher_D5
 NoConn ~ 3965 2380
 NoConn ~ 3965 2080
 NoConn ~ 4565 1380
@@ -63,25 +59,25 @@ F 3 "~" H 5390 1940 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L test_project-rescue:COMMON_-power_GOST PWR3
+L arduino_connections-rescue:COMMON_-power_GOST-test_project-rescue PWR3
 U 1 1 603BF4BC
-P 3590 2505
-F 0 "PWR3" H 3650 2395 50  0001 C CNN
-F 1 "COMMON_" H 3785 2540 50  0001 C CNN
-F 2 "" H 3590 2435 50  0001 C CNN
-F 3 "" H 3590 2435 50  0001 C CNN
-	1    3590 2505
+P 3590 2460
+F 0 "PWR3" H 3650 2350 50  0001 C CNN
+F 1 "COMMON_" H 3785 2495 50  0001 C CNN
+F 2 "" H 3590 2390 50  0001 C CNN
+F 3 "" H 3590 2390 50  0001 C CNN
+	1    3590 2460
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Heater R1
 U 1 1 600CF186
-P 2815 2280
-F 0 "R1" V 2608 2280 50  0000 C CNN
-F 1 "Heater" V 2699 2280 50  0000 C CNN
-F 2 "" V 2745 2280 50  0001 C CNN
-F 3 "~" H 2815 2280 50  0001 C CNN
-	1    2815 2280
+P 2815 2235
+F 0 "R1" V 2608 2235 50  0000 C CNN
+F 1 "Heater" V 2699 2235 50  0000 C CNN
+F 2 "" V 2745 2235 50  0001 C CNN
+F 3 "~" H 2815 2235 50  0001 C CNN
+	1    2815 2235
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -98,12 +94,12 @@ $EndComp
 $Comp
 L Relay_SolidState:S116S01 K1
 U 1 1 6006F5D9
-P 3265 2380
-F 0 "K1" H 3265 2680 50  0000 C CNN
-F 1 "SSR-40 DA" H 3270 2590 50  0000 C CNN
-F 2 "" H 3065 2180 50  0001 L CIN
-F 3 "http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/s116s01_e.pdf" H 3265 2380 50  0001 L CNN
-	1    3265 2380
+P 3265 2335
+F 0 "K1" H 3265 2635 50  0000 C CNN
+F 1 "SSR-40 DA" H 3270 2545 50  0000 C CNN
+F 2 "" H 3065 2135 50  0001 L CIN
+F 3 "http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/s116s01_e.pdf" H 3265 2335 50  0001 L CNN
+	1    3265 2335
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -162,7 +158,7 @@ F 3 "~" H 2800 1485 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L test_project-rescue:+12V #PWR01
+L arduino_connections-rescue:+12V-test_project-rescue #PWR01
 U 1 1 604E5161
 P 2800 1385
 F 0 "#PWR01" H 2800 1285 79  0001 C CNN
@@ -186,80 +182,58 @@ F 3 "~" H 2800 1195 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L test_project-rescue:sw_btn-test_project-cache U4
+L arduino_connections-rescue:sw_btn-test_project-cache-test_project-rescue U4
 U 1 1 60588C51
-P 3290 3180
-F 0 "U4" H 3390 3300 50  0001 C CNN
-F 1 "sw_btn" H 3300 3095 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 3290 3180 50  0001 C CNN
-F 3 "" H 3290 3180 50  0001 C CNN
-	1    3290 3180
+P 3125 3335
+F 0 "U4" H 3225 3455 50  0001 C CNN
+F 1 "sw_btn" H 3135 3250 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 3125 3335 50  0001 C CNN
+F 3 "" H 3125 3335 50  0001 C CNN
+	1    3125 3335
 	1    0    0    -1  
 $EndComp
 $Comp
-L test_project-rescue:sw_btn-test_project-cache U2
-U 1 1 60586A8E
-P 3290 2980
-F 0 "U2" H 3390 3100 50  0001 C CNN
-F 1 "sw_btn" H 3300 2895 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 3290 2980 50  0001 C CNN
-F 3 "" H 3290 2980 50  0001 C CNN
-	1    3290 2980
-	1    0    0    -1  
-$EndComp
-$Comp
-L test_project-rescue:sw_btn-test_project-cache U1
+L arduino_connections-rescue:sw_btn-test_project-cache-test_project-rescue U1
 U 1 1 6057E898
-P 3290 2780
-F 0 "U1" H 3390 2900 50  0001 C CNN
-F 1 "sw_btn" H 3300 2695 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 3290 2780 50  0001 C CNN
-F 3 "" H 3290 2780 50  0001 C CNN
-	1    3290 2780
+P 3125 2770
+F 0 "U1" H 3225 2890 50  0001 C CNN
+F 1 "sw_btn" H 3135 2685 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 3125 2770 50  0001 C CNN
+F 3 "" H 3125 2770 50  0001 C CNN
+	1    3125 2770
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 603F442D
-P 2940 2780
-F 0 "R2" V 2980 2695 50  0000 R CNN
-F 1 "10K" V 2890 2705 32  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2870 2780 50  0001 C CNN
-F 3 "~" H 2940 2780 50  0001 C CNN
-	1    2940 2780
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 6044731B
-P 2940 2980
-F 0 "R3" V 2980 2895 50  0000 R CNN
-F 1 "10K" V 2890 2905 32  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2870 2980 50  0001 C CNN
-F 3 "~" H 2940 2980 50  0001 C CNN
-	1    2940 2980
+P 2705 2770
+F 0 "R2" V 2745 2685 50  0000 R CNN
+F 1 "10K" V 2655 2695 32  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2635 2770 50  0001 C CNN
+F 3 "~" H 2705 2770 50  0001 C CNN
+	1    2705 2770
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 60447ABC
-P 2940 3180
-F 0 "R4" V 2980 3095 50  0000 R CNN
-F 1 "10K" V 2890 3105 32  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2870 3180 50  0001 C CNN
-F 3 "~" H 2940 3180 50  0001 C CNN
-	1    2940 3180
+P 2705 3335
+F 0 "R4" V 2745 3250 50  0000 R CNN
+F 1 "10K" V 2655 3260 32  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2635 3335 50  0001 C CNN
+F 3 "~" H 2705 3335 50  0001 C CNN
+	1    2705 3335
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power_GOST:COMMON_ PWR1
 U 1 1 604F3672
-P 2715 3205
-F 0 "PWR1" H 2775 3095 50  0001 C CNN
-F 1 "COMMON_" H 2910 3240 50  0001 C CNN
-F 2 "" H 2715 3135 50  0001 C CNN
-F 3 "" H 2715 3135 50  0001 C CNN
-	1    2715 3205
+P 2480 3390
+F 0 "PWR1" H 2540 3280 50  0001 C CNN
+F 1 "COMMON_" H 2675 3425 50  0001 C CNN
+F 2 "" H 2480 3320 50  0001 C CNN
+F 3 "" H 2480 3320 50  0001 C CNN
+	1    2480 3390
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -274,7 +248,7 @@ F 3 "" H 4465 3410 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L test_project-rescue:+12V #PWR02
+L arduino_connections-rescue:+12V-test_project-rescue #PWR02
 U 1 1 604EA431
 P 4365 1380
 F 0 "#PWR02" H 4365 1280 79  0001 C CNN
@@ -296,49 +270,26 @@ F 3 "" H 2965 1660 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2465 2480 2965 2480
+	2465 2435 2965 2435
 Wire Wire Line
-	2465 2280 2665 2280
-Wire Wire Line
-	3840 2280 3965 2280
-Wire Wire Line
-	3840 2180 3965 2180
-Wire Wire Line
-	5240 1765 5390 1765
+	2465 2235 2665 2235
 Wire Wire Line
 	2965 1680 2965 1730
 Wire Wire Line
-	3865 2780 3865 3180
-Wire Wire Line
-	3715 2280 3565 2280
+	3715 2235 3565 2235
 Wire Wire Line
 	3715 2480 3965 2480
-Wire Wire Line
-	3715 2480 3715 2280
-Wire Wire Line
-	3965 2780 3865 2780
-Wire Wire Line
-	3790 2680 3965 2680
-Wire Wire Line
-	3790 2980 3790 2680
-Wire Wire Line
-	3715 2580 3715 2780
-Wire Wire Line
-	3965 2580 3715 2580
 Wire Wire Line
 	3965 2980 4040 2980
 Wire Wire Line
 	3965 2880 4040 2880
-Connection ~ 5390 1765
-Wire Wire Line
-	5390 1765 5390 1840
 Connection ~ 3740 1980
 Wire Wire Line
 	3740 1980 3965 1980
 Wire Wire Line
-	3590 2505 3590 2480
+	3590 2460 3590 2435
 Wire Wire Line
-	3590 2480 3565 2480
+	3590 2435 3565 2435
 Wire Wire Line
 	5790 1755 5790 1605
 Wire Wire Line
@@ -348,35 +299,11 @@ Wire Wire Line
 Wire Wire Line
 	5790 1505 5390 1505
 Wire Wire Line
-	5390 1605 5390 1765
-Wire Wire Line
 	2800 1195 3005 1195
 Wire Wire Line
-	3040 2780 3190 2780
+	2480 3335 2605 3335
 Wire Wire Line
-	3415 2780 3715 2780
-Wire Wire Line
-	3415 2980 3790 2980
-Wire Wire Line
-	3415 3180 3865 3180
-Wire Wire Line
-	3190 3180 3040 3180
-Wire Wire Line
-	2715 2980 2840 2980
-Wire Wire Line
-	2715 3180 2840 3180
-Wire Wire Line
-	2840 2780 2715 2780
-Wire Wire Line
-	2715 2780 2715 2980
-Connection ~ 2715 3180
-Connection ~ 2715 2980
-Wire Wire Line
-	2715 2980 2715 3180
-Wire Wire Line
-	3040 2980 3190 2980
-Wire Wire Line
-	2715 3180 2715 3205
+	2605 2770 2480 2770
 Connection ~ 5790 1505
 Connection ~ 5790 1605
 Wire Wire Line
@@ -449,8 +376,8 @@ F 3 "" H 6205 1970 50  0001 C CNN
 	1    6205 2040
 	1    0    0    -1  
 $EndComp
-Text Label 6055 1765 0    50   ~ 0
-D5
+Text Label 6200 1760 2    28   ~ 0
+Higher_D5
 Wire Wire Line
 	6055 1765 6205 1765
 $Comp
@@ -481,24 +408,22 @@ Wire Wire Line
 	5790 1355 5900 1355
 Wire Wire Line
 	5790 1755 5900 1755
-Wire Wire Line
-	4965 2380 5090 2380
 $Comp
 L power_GOST:COMMON_ PWR8
 U 1 1 60714743
-P 5190 2480
-F 0 "PWR8" H 5250 2370 50  0001 C CNN
-F 1 "COMMON_" H 5385 2515 50  0001 C CNN
-F 2 "" H 5190 2410 50  0001 C CNN
-F 3 "" H 5190 2410 50  0001 C CNN
-	1    5190 2480
+P 5185 2480
+F 0 "PWR8" H 5245 2370 50  0001 C CNN
+F 1 "COMMON_" H 5380 2515 50  0001 C CNN
+F 2 "" H 5185 2410 50  0001 C CNN
+F 3 "" H 5185 2410 50  0001 C CNN
+	1    5185 2480
 	1    0    0    -1  
 $EndComp
 NoConn ~ 11280 4985
 Wire Wire Line
 	5390 1135 6205 1135
 Wire Wire Line
-	5190 1135 5190 2280
+	5185 1135 5185 2280
 Wire Wire Line
 	5190 1135 5390 1135
 Wire Wire Line
@@ -508,7 +433,6 @@ Wire Wire Line
 Connection ~ 5390 1135
 Wire Wire Line
 	5390 1505 5390 1135
-Connection ~ 5190 1135
 Wire Wire Line
 	3590 1130 3740 1130
 Wire Wire Line
@@ -525,28 +449,17 @@ Wire Wire Line
 	3740 1580 3740 1980
 Wire Wire Line
 	3740 1130 3740 1380
-$Comp
-L power_GOST:+5V #PWR0102
-U 1 1 60B94F80
-P 4665 1055
-F 0 "#PWR0102" H 4665 955 79  0001 C CNN
-F 1 "+5V" H 4745 1220 50  0000 C CNN
-F 2 "" V 4665 1180 98  0000 C CNN
-F 3 "" H 4665 1180 98  0001 C CNN
-	1    4665 1055
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4665 1055 4665 1130
 $Comp
 L Device:R_POT_Small R6
 U 1 1 601DE33E
-P 5190 2380
-F 0 "R6" H 5135 2330 50  0000 R CNN
-F 1 "10K" H 5125 2430 31  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 5190 2380 50  0001 C CNN
-F 3 "~" H 5190 2380 50  0001 C CNN
-	1    5190 2380
+P 5185 2380
+F 0 "R6" H 5130 2330 50  0000 R CNN
+F 1 "10K" H 5120 2430 31  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 5185 2380 50  0001 C CNN
+F 3 "~" H 5185 2380 50  0001 C CNN
+	1    5185 2380
 	-1   0    0    1   
 $EndComp
 $Sheet
@@ -563,4 +476,120 @@ Wire Wire Line
 	4965 2880 5395 2880
 Wire Wire Line
 	4965 2780 5395 2780
+Connection ~ 2480 3335
+Wire Wire Line
+	2480 3335 2480 3390
+Wire Wire Line
+	3715 2235 3715 2480
+Wire Wire Line
+	2605 3040 2480 3040
+$Comp
+L Device:R_Small R3
+U 1 1 6044731B
+P 2705 3040
+F 0 "R3" V 2745 2955 50  0000 R CNN
+F 1 "10K" V 2655 2965 32  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2635 3040 50  0001 C CNN
+F 3 "~" H 2705 3040 50  0001 C CNN
+	1    2705 3040
+	0    -1   -1   0   
+$EndComp
+$Comp
+L arduino_connections-rescue:sw_btn-test_project-cache-test_project-rescue U2
+U 1 1 60586A8E
+P 3125 3040
+F 0 "U2" H 3225 3160 50  0001 C CNN
+F 1 "sw_btn" H 3135 2955 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 3125 3040 50  0001 C CNN
+F 3 "" H 3125 3040 50  0001 C CNN
+	1    3125 3040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2480 2770 2480 3040
+Connection ~ 2480 3040
+Wire Wire Line
+	2480 3040 2480 3335
+Text Label 2955 2660 2    39   ~ 0
+Btn_Up_D8
+Text Label 3965 2680 2    39   ~ 0
+Btn_Down_D9
+Text Label 3965 2780 2    39   ~ 0
+Btn_Cancel_D10
+Text Label 3965 2580 2    39   ~ 0
+Btn_Up_D8
+Text Label 2955 2925 2    39   ~ 0
+Btn_Down_D9
+Text Label 2955 3220 2    39   ~ 0
+Btn_Cancel_D10
+Wire Wire Line
+	2805 3040 2955 3040
+Wire Wire Line
+	2805 3335 2955 3335
+Wire Wire Line
+	2955 3220 2955 3335
+Connection ~ 2955 3335
+Wire Wire Line
+	2955 3335 3025 3335
+Wire Wire Line
+	2955 2925 2955 3040
+Connection ~ 2955 3040
+Wire Wire Line
+	2955 3040 3025 3040
+Wire Wire Line
+	2955 2660 2955 2770
+Wire Wire Line
+	2805 2770 2955 2770
+Connection ~ 2955 2770
+Wire Wire Line
+	2955 2770 3025 2770
+Wire Wire Line
+	3375 2770 3250 2770
+Wire Wire Line
+	3250 3040 3375 3040
+Wire Wire Line
+	3375 2770 3375 3040
+Connection ~ 3375 3040
+Wire Wire Line
+	3250 3335 3375 3335
+Wire Wire Line
+	3375 3040 3375 3335
+$Comp
+L power_GOST:+5V #PWR0102
+U 1 1 60B94F80
+P 4665 1055
+F 0 "#PWR0102" H 4665 955 79  0001 C CNN
+F 1 "+5V" H 4730 1200 50  0000 C CNN
+F 2 "" V 4665 1180 98  0000 C CNN
+F 3 "" H 4665 1180 98  0001 C CNN
+	1    4665 1055
+	1    0    0    -1  
+$EndComp
+Connection ~ 3375 2770
+Wire Wire Line
+	3375 2770 3375 2715
+$Comp
+L power_GOST:+5V #PWR?
+U 1 1 607C2C5C
+P 3375 2715
+F 0 "#PWR?" H 3375 2615 79  0001 C CNN
+F 1 "+5V" H 3445 2860 50  0000 C CNN
+F 2 "" V 3375 2840 98  0000 C CNN
+F 3 "" H 3375 2840 98  0001 C CNN
+	1    3375 2715
+	1    0    0    -1  
+$EndComp
+Text Label 5390 1760 2    28   ~ 0
+Lower_D4
+Wire Wire Line
+	5390 1605 5390 1765
+Wire Wire Line
+	5390 1765 5390 1840
+Connection ~ 5390 1765
+Wire Wire Line
+	5240 1765 5390 1765
+Wire Wire Line
+	4965 2380 5085 2380
+Text Label 3965 2180 2    28   ~ 0
+Lower_D4
 $EndSCHEMATC
